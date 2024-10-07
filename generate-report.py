@@ -1,7 +1,6 @@
 markdown_text = """
 # This is a sample report of the <train.csv> containing Californian house prices
 
-
 Here's some summary data:
 
 ![Summary Data](./fig/summary.png)
@@ -21,5 +20,8 @@ After some cleaning, it'll look like:
 # Open a file to write the markdown content
 with open("report.md", "w", encoding="utf-8") as file:
     file.write(markdown_text)
+
+
+
 
 print("Markdown file created!")
