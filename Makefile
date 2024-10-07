@@ -10,23 +10,8 @@ lint:
 test:
 	python -m pytest -cov=main test_main.py -v
 
-report:
-	python generate-report.py
-
-report-n-push:
-	make report
-	@
-	@ STATUS=$(git status --porcelain); \
-	if [ -z "$STATUS" ]; then \
-		git config --global user.email "cpyang@umich.edu" ; \
-		git config --global user.name "Peter Yang" ; \
-		git add . ; \
-		git commit -m "Updated Report" ; \
-		git push ; \
-	else \
-		echo "No changes, all clean!"; \
-	fi \
-	
+init:
+	python main.py init
 
 	
-all: install format lint test report-n-push
+all: install format lint test init
