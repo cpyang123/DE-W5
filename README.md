@@ -1,7 +1,7 @@
 [![Python Application Test with Github Actions by Peter](https://github.com/cpyang123/DE-W4/actions/workflows/test.yml/badge.svg)](https://github.com/cpyang123/DE-W4/actions/workflows/test.yml)
 
 
-# Project Title: Command Line Tool for Managing House Price Records
+# Command Line Tool for Managing House Price Records
 
 ## Overview
 
