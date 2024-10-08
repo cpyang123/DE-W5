@@ -5,6 +5,7 @@ Test goes here
 
 import subprocess
 
+
 def test_init():
     """tests extract()"""
     result = subprocess.run(
@@ -32,7 +33,7 @@ def test_update_record():
             "2.486988847583643",
             "34.6",
             "-120.12",
-            "0.98"
+            "0.98",
         ],
         capture_output=True,
         text=True,
@@ -67,7 +68,7 @@ def test_create_record():
             "2.486988847583643",
             "34.6",
             "-120.12",
-            "0.98"
+            "0.98",
         ],
         capture_output=True,
         text=True,
